@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--Template from Bootstrap-->
+<html lang="en">
+<head>
+  <title>Alex Hong</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale = 1, user-scalable=no">
+
+  <!-- BS STYLE SHEET -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- MY STYLE SHEET -->
+  <link rel = "stylesheet" href="style/style.css">
+  
+</head>
+
+<body>
+
+<div class="navbar">
+  <ul>
+    <li><a href="#"><h2>Alex Hong</h2>
+        </a></li>
+    <li class = "navright"><a href="#p"><h2>Portfolio</h2>
+        </a></li>
+    <li class = "navright"><a href="#c"><h2>Contacts</h2>
+        </a></li>
+  </ul>
+</div>
+
+<div class = "description">
+  <h1> Alex Hong</h1>
+  <p> Hi, I'm Alex Hong, and I'm a Software Developer and a UX Designer.</p>
+  <p>
+  I aspire to develop an interactive mobile computer systems through programming, rapid-prototyping, and interface design with great enthusiasm and energy.</p>
+
+  <a href = "#p"><button type="button" class="btn btn-primary btn-lg button">View Portfolio</button></a>
+
+
+  <p> I'm an undergraduate student majoring in Electrical and Computer Engineering and Human Computer Interaction at Carnegie Mellon University.</p>
+  <p>
+  Interests: mobile systems, physical computing, wearable devices, rapid-prototyping, interface design
+  Computer Languages: C, Python, JavaScript, HTML, CSS, JQuery, System Verilog, C#, Java, Swift
+ 
+  Applications: Adobe Photoshop, Sketch, Invision, Adobe, Unity, Matlab</p>
+
+  <a href = "img/Resume.pdf" target = "_blank"><button type="button" class="btn btn-primary btn-lg button">View Resumé</button></a>
+</div>
+
+<h2 style = "text-align: center">Project</h2> <div class = "portfolio" id = "p">
+
+<!-- Project 1 -->
+  <div class = project>
+    <div class = "col-md-4">
+      <h3>Teleoperation with Baxter</h3>
+      <h4 class = hashtag >#Project Lead</h4>
+      <h4>
+      	Developed Baxter Robot to imitate user’s arm movement in real time, detected by Leap Motion, where the user sees through Baxter’s lens remotely by wearing Google Cardboard, providing the VR environment.
+      	<br>
+     	Designed a webcam server in Raspberry Pi to send live videos from cameras of “interpupilary distance” to mobile phone, which would then be attached to the Google Cardboard for the VR experience.
+
+      </h4>
+    </div>
+
+    <div class = "col-md-8">
+      <div class = "projectimg">
+        <a href = "#">
+          <img src= "img/Tap112.png" class = "projectimg">
+        </a>
+      </div>
+    </div>
+  </div>
+
+<!-- Project 2 -->
+  <div class = project>
+    <div class = "col-md-4">
+      <div style = "height:80%">
+        <h3>Fortress</h3>
+        <h4 class = hashtag >#Designer #Programmer</h4>
+        <h4>2-Dimensinoal single/multiplayer tank game with dynamic animations and inspiring graphics.</h4>
+      </div/>
+      <div style = "height:20%;">
+        <a href = "fortress.html">
+          <button type="button" class="btn btn-primary btn-lg button">
+            More Fortress
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div class = "col-md-8">
+      <div class = "projectimg">
+        <a href = "fortress.html">
+          <img src= "img/Fortress/1.png" class = "projectimg">
+        </a>
+      </div>
+    </div>
+  </div>
+
+<!-- Project 3 -->
+  <div class = project>
+    <div class = "col-md-4">
+      <h3>Tap 112</h3>
+      <h4 class = hashtag >#Designer #Programmer</h4>
+      <h4>Designed a game similar to Tap Tap that is playable with any music.</h4>
+    </div>
+
+    <div class = "col-md-8">
+      <div class = "projectimg">
+        <a href = "#">
+          <img src= "img/Tap112.png" class = "projectimg">
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class = "description contacts" id = "c">
+  <h2> Contacts </h2>
+  <p>
+    Email: seongkwh@andrew.cmu.edu <br>
+    Phone: (412)789-6887
+  </p>
+  <a href= "https://www.linkedin.com/in/alexhongs"> 
+  <p>LinkedIn </p>
+  </a>
+
+  <form>
+  Email for future contact:<br>
+  <input type="email" name="email" id = "mail"><br>
+  <button type = "button" class = "btn btn-primary button"
+    onclick = "sendEmail()"> Send </button>
+  </form>
+</div>
+
+</body>
+</html>
